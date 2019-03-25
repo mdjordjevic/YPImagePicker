@@ -22,6 +22,9 @@ public struct YPColors {
     /// A color for bottom bar
     public var bottomBarBackgroundColor: UIColor?
     
+    /// Picker background color
+    public var pickerBackgroundColor: UIColor?
+    
     /// A color for circle for selected items in multiple selection
     /// Default is nil, which takes tintColor.
     public var multipleItemsSelectedCircleColor: UIColor?

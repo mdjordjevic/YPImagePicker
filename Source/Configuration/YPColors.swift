@@ -19,6 +19,9 @@ public struct YPColors {
     /// Default is nil, which is default iOS gray UIActivityIndicator.
     public var navigationBarActivityIndicatorColor: UIColor?
     
+    /// A color for bottom bar
+    public var bottomBarBackgroundColor: UIColor?
+    
     /// A color for circle for selected items in multiple selection
     /// Default is nil, which takes tintColor.
     public var multipleItemsSelectedCircleColor: UIColor?

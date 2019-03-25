@@ -16,7 +16,6 @@ final class YPBottomPagerView: UIView {
     
     convenience init() {
         self.init(frame: .zero)
-        backgroundColor = UIColor(red: 239/255, green: 238/255, blue: 237/255, alpha: 1)
         
         sv(
             scrollView,
@@ -39,6 +38,11 @@ final class YPBottomPagerView: UIView {
         
         clipsToBounds = false
         setupScrollView()
+        
+        if let bottomBarColor = YPConfig.colors.bottomBarBackgroundColor {
+            backgroundColor = bottomBarColor
+            header.backgroundColor = bottomBarColor
+        }
     }
 
     private func setupScrollView() {
